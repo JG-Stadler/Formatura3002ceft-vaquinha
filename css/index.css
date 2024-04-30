@@ -1,3 +1,5 @@
+/* Header,navegação e texto principal */
+
 .header-presentation-logo{
     background-color: var(--background-dark);
     color: #fff;
@@ -81,4 +83,42 @@
     100%{
         transform: translate(0%,-50%);
     }
+}
+/* seção de apresentção*/
+.presentation-text{
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #fff;
+    min-height: 350px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+    position: relative;
+    width: 619px;
+    max-width: 96%;
+    overflow: hidden;
+}
+.presentation-text>img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.presentation-text::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+.presentation-text>h3,.presentation-text p{
+    z-index: 2;
+}
+.presentation-text p{
+    font-size: large;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.918);
 }
