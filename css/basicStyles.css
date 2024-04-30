@@ -4,3 +4,13 @@
     padding: 0;
     font-family: Roboto,arial;
 }
+body,html{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to left,#fff,var(--background-light),#fff);
+}
+:root{
+    --background-dark:#161616;
+    --background-light:#e6e3e3;
+    --color-logo:#6C86D0;
+}

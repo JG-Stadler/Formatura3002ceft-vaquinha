@@ -1,0 +1,84 @@
+.header-presentation-logo{
+    background-color: var(--background-dark);
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    max-height: 75vh;
+}
+.logo-3002{
+    max-width: 90%;
+    max-height: 80%;
+}
+.navigation{
+    margin: 30px ;
+}
+.nav-list{
+    list-style: none;
+    width: 200px;
+    max-width: 95%;
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    row-gap: 10px;
+}
+.nav-button{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#donate-btn-scroll-page{
+    border: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: var(--color-logo);
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.616);
+    font-size: larger;
+    position: relative;
+}   
+#donate-btn-scroll-page::before{
+    content: '>';
+    color: var(--color-logo);
+    text-shadow: 0 0 3px black;
+    font-size: 3rem;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: -25%;
+    animation: AnimationArrow1 1.5s linear infinite;
+}
+#donate-btn-scroll-page::after{
+    content: '<';
+    color: var(--color-logo);
+    text-shadow: 0 0 3px black;
+    font-size: 3rem;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 110%;
+    animation: AnimationArrow2 1.5s linear infinite;
+}
+@keyframes AnimationArrow1{
+    0%{
+        transform: translate(0%,-50%);
+    }
+    50%{
+        transform: translate(20%,-50%);
+    }
+    100%{
+        transform: translate(0%,-50%);
+    }
+}
+@keyframes AnimationArrow2{
+    0%{
+        transform: translate(0%,-50%);
+    }
+    50%{
+        transform: translate(-20%,-50%);
+    }
+    100%{
+        transform: translate(0%,-50%);
+    }
+}
