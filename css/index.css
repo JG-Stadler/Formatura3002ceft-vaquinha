@@ -121,7 +121,9 @@
     width: 619px;
     max-width: 96vw;
     position: relative;
-    overflow: hidden;
+}
+.presentation-text1 img,.presentation-text2 img{
+    border:double 5px var(--color-logo);
 }
 .presentation-text1 p,.presentation-text2 p{
     font-size: large;
@@ -138,4 +140,21 @@
 }
 .presentation-text2 p{
     z-index: 2;
+}
+/* Carrossel de imagens com fotos dos alunos */
+.meet-our-class{
+
+    text-align: center;
+}
+.meet-our-class h2{
+    text-align: center;
+    font-family: 'Sedgwick Ave Display',Roboto,arial;
+    font-weight: bolder;
+    margin-top: 100px;
+    flex-direction: row-reverse;
+}
+.meet-our-class img{
+    max-width: 95%;
+    width: 600px;
+    border:double 3px var(--color-logo);
 }
