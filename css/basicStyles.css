@@ -8,6 +8,8 @@ body,html{
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(to left,#fff,var(--background-light),#fff);
+    /* background-image: url(../images/textura-background.jpg); */
+    /* background-size: contain; */
 }
 :root{
     --background-dark:#161616;
