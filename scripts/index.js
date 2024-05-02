@@ -17,3 +17,11 @@ function ChangeImage(){
         i++;
        },1500);
 }
+
+// Copiar codigo pix
+function CopyKey(){
+    let pixKey = document.getElementById("pix-key").innerText;
+    navigator.clipboard.writeText(pixKey).then(()=>{
+        alert("Chave pix Copiada para a área de transferência");
+    });
+}
