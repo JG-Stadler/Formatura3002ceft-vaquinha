@@ -7,12 +7,16 @@
 body,html{
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(to left,#fff,var(--background-light),#fff);
-    /* background-image: url(../images/textura-background.jpg); */
-    /* background-size: contain; */
+    background-image: url(../images/background-textura-papel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
 }
 :root{
     --background-dark:#161616;
     --background-light:#e6e3e3;
     --color-logo:#6C86D0;
+}
+p{
+    margin: 0;
 }

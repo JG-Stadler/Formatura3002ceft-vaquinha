@@ -27,27 +27,40 @@
     <!-- Texto de apresentação -->
  <main>
     <h3 class="hello">Olá,somos da turma 3002ceft <p>&#x1F44B</p></h3>
-    <section class="presentation-text1">
+    <div class="presentation-text1">
          <p>
              Este ano encerraremos uma grande jornada em nossas vidas! <br>
              Depois de longos anos na escola, esse ano finalmente terminaremos o ensino médio
              e contamos com a sua contribuição para realizarmos nossa tão sonhada formatura.
          </p>
          <img src="images/terceirãoAzulão.jpg" class="rounded" alt="terceirão azulão">
-    </section>
-    <section class="presentation-text2">
+    </div>
+    <div class="presentation-text2">
          <p>
              Doe o valor que desejar,
              qualquer quantia já é o suficiente para ajudar a arcar com os
              custos de nossa formatura.
          </p>
          <img src="images/terceirão-all-black.jpg" class="rounded" alt="terceirão azulão">
-    </section>
-    <section class="meet-our-class" onload="ChangeImage()">
+        </div>
+        <!-- onload="ChangeImage()" -->
+    <div class="meet-our-class">
         <h2>Conheça nossa turminha</h2>
         <img src="" id="foto-aluno" class="rounded shadow" alt="Foto aluno">
-    </section>
+    </div>
  </main>
+ <section class="pay">
+    <h1>Contribua já!!!</h1>
+    <img src="images/icone-pix.webp" alt="Icone-pix">
+    <div class="pix-info">
+        <h4 class="title">Nome da conta</h4>
+        <p>Sarah Dos Santos Souza Goulart</p>
+        <h4 class="title">Chave pix</h4>
+        <span class="copy-pix-key"><p id="pix-key">
+            2fa53d4a-1d2f-4a7b-8212-920d392b8293
+        </p><button id="copy">Copiar</button></span>
+    </div>
+ </section>
  <script src="scripts/index.js"></script>
 </body>
 </html>

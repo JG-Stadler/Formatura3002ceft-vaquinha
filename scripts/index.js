@@ -8,10 +8,12 @@ var pictures =[
 var moldura = document.getElementById("foto-aluno");
 
 let i = 0;
-const ChangeImage= setInterval(()=>{
-     if(i===17){
-         i=0;
-     }
-     moldura.src = `images/${pictures[i]}`;
-     i++;
-    },1500);
+function ChangeImage(){
+    setInterval(()=>{
+        if(i===17){
+            i=0;
+        }
+        moldura.src = `images/${pictures[i]}`;
+        i++;
+       },1500);
+}

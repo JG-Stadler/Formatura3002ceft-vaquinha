@@ -158,3 +158,45 @@
     width: 600px;
     border:double 3px var(--color-logo);
 }
+/* Seção de pagamento */
+.pay{
+    text-align: left;
+    margin: 70px auto;
+    width: 600px;
+    max-width: 97%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.pay h1{
+    align-self: center;
+    font-family: 'Sedgwick Ave Display',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.pay>img{
+    align-self: center;
+    margin: 25px 0;
+    max-width: 90%;
+}
+.pay p{
+    color: #525252;
+}
+.copy-pix-key{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    border: solid 1px black;
+    height: 50px;
+}
+.copy-pix-key p{
+    padding: 0 20px;
+}
+.copy-pix-key button{
+    padding: 0 20px;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+    background-color: var(--color-logo);
+    border: none;
+    cursor: pointer;
+}
