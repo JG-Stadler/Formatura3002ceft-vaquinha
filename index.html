@@ -20,12 +20,12 @@
     <nav class="navigation">
         <ul class="nav-list">
             <li class="nav-item"><a href="https://www.instagram.com/3002ceft/" class="nav-link"><img src="images/icons8-instagram.svg" alt="Instagram"></a></li>
-            <li class="nav-item"><a href="https://www.tiktok.com/@3002freitomas?lang=pt-BR" class="nav-link"><img src="images/icons8-tik-tok.svg" alt="TikTok"></a></li>
-            <li class="nav-item nav-button"><button onclick="ScrollPage()" id="donate-btn-scroll-page" class="shadow btn">Faça sua doação</button></li>
+            <li class="nav-item"><a href="https://www.tiktok.com/@3002freitomas?lang=pt-BR" target="_blank" class="nav-link"><img src="images/icons8-tik-tok.svg" alt="TikTok"></a></li>
+            <li class="nav-item nav-button"><button onclick="ScrollPage()" id="donate-btn-scroll-page" target="_blank" class="shadow btn">Faça sua doação</button></li>
         </ul>
     </nav>
     <!-- Texto de apresentação -->
- <main>
+    <main>
     <h3 class="hello">Olá,somos da turma 3002ceft <p>&#x1F44B</p></h3>
     <div class="presentation-text1">
          <p>
@@ -43,13 +43,14 @@
          </p>
          <img src="images/terceirão-all-black.jpg" class="rounded" alt="terceirão azulão">
         </div>
-        <!-- onload="ChangeImage()" -->
-    <div class="meet-our-class">
+        <!-- fotos dos alunos -->
+    <div class="meet-our-class" defer>
         <h2>Conheça nossa turminha</h2>
-        <img src="images/enzzo.jpg" id="foto-aluno" class="rounded shadow" alt="Foto aluno">
+        <img src="" id="foto-aluno" class="rounded shadow" alt="Foto aluno">
     </div>
- </main>
- <section class="pay" id="pay">
+    </main>
+    <!-- seção de pagamento -->
+    <section class="pay" id="pay">
     <h1>Contribua já!!!</h1>
     <img src="images/icone-pix.webp" alt="Icone-pix">
     <div class="pix-info">
@@ -60,7 +61,17 @@
             2fa53d4a-1d2f-4a7b-8212-920d392b8293
         </p><button id="copy" onclick="CopyKey()">Copiar</button></span>
     </div>
- </section>
+    </section>
+
+    <!-- Rodapé da pagina -->
+    <footer>
+        <img src="images/logoTerceirão-com-nome.jpg" class="logo-ft" alt="logo terceirão">
+        <nav class="social-midia-links-footer">
+            <a href="https://www.instagram.com/3002ceft/" target="_blank" class="ft-link"><img src="images/icone-instagram-branco.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/@3002freitomas?lang=pt-BR" target="_blank" class="ft-link"><img src="images/icone-tiktok-branco.avif" alt="TikTok"></a>
+        </nav>
+        <p class="credits">Criação do site: <a href="https://www.instagram.com/jg_stadler/" target="_blank">@jg_stadler</a></p>
+    </footer>
  <script src="scripts/index.js"></script>
 </body>
 </html>

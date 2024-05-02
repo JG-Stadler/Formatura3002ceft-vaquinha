@@ -8,15 +8,13 @@ var pictures =[
 var moldura = document.getElementById("foto-aluno");
 
 let i = 0;
-function ChangeImage(){
-    setInterval(()=>{
+const ChangeImage = setInterval(()=>{
         if(i===17){
             i=0;
         }
         moldura.src = `images/${pictures[i]}`;
         i++;
        },1500);
-}
 
 // Copiar codigo pix
 function CopyKey(){
@@ -28,6 +26,6 @@ function CopyKey(){
 // Botão de scroll
 const paySection = document.getElementById("pay");
 function ScrollPage(){
-    const paySectionTopDistance = paySection.offsetTop;
+    const paySectionTopDistance = paySection.offsetTop - 150;
     window.scrollTo(0,paySectionTopDistance);
 }

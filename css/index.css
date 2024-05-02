@@ -200,3 +200,40 @@
     border: none;
     cursor: pointer;
 }
+/* Rodapé da pagina */
+footer{
+    background-color: black;
+    display: grid;
+    place-content: center;
+    grid-template-rows: 100px 60px;
+    grid-template-columns: 40% 40%;
+    justify-items: start;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo-ft{
+    height: 100px;
+    grid-column: 1;
+    grid-row: 1;
+}
+.credits{
+    grid-row: 2;
+    grid-column: 1;
+    color:#fff;
+}
+.social-midia-links-footer{
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    justify-self: end;
+}
+.social-midia-links-footer a{
+    background-color: #fff;
+    border-radius: 10px;
+}
+.social-midia-links-footer a>img{
+    width: 50px;
+}
