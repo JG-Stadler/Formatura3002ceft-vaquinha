@@ -25,3 +25,9 @@ function CopyKey(){
         alert("Chave pix Copiada para a área de transferência");
     });
 }
+// Botão de scroll
+const paySection = document.getElementById("pay");
+function ScrollPage(){
+    const paySectionTopDistance = paySection.offsetTop;
+    window.scrollTo(0,paySectionTopDistance);
+}
