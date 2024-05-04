@@ -126,14 +126,13 @@
     margin: 30px auto;
     color: #fff;
     min-height: 350px;
-    padding: 0 10px;
+    /* padding: 0 10px; */
     display: grid;
     place-content: center;
     width: 619px;
-    max-width: 96vw;
+    overflow: hidden;
+    max-width: 90%;
     position: relative;
-}
-.presentation-text1 img,.presentation-text2 img{
     border:double 5px var(--color-logo);
 }
 .presentation-text1 p,.presentation-text2 p{
