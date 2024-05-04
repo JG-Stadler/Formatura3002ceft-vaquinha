@@ -29,3 +29,8 @@ function ScrollPage(){
     const paySectionTopDistance = paySection.offsetTop - 150;
     window.scrollTo(0,paySectionTopDistance);
 }
+// Esconder tela de carregamento
+const loadScreen = document.getElementById("loading");
+function HideLoader(){
+    loadScreen.style.display = "none";
+}
