@@ -210,6 +210,11 @@
     border: none;
     cursor: pointer;
 }
+@media (max-width:450px) {
+    #pix-key{
+        font-size: small;
+    }
+}
 /* Rodapé da pagina */
 footer{
     background-color: black;
@@ -246,4 +251,10 @@ footer{
 }
 .social-midia-links-footer a>img{
     width: 50px;
+}
+@media (max-width:370px){
+    .social-midia-links-footer{
+        flex-direction: column;
+        align-items: flex-end;
+    }
 }
