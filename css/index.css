@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
-/* Header,navegação e texto principal */
 
+/* Header e texto principal */
 .header-presentation-logo{
     background-color: var(--background-dark);
     color: #fff;
     text-align: center;
     padding: 25px 0;
-    max-height: 75vh;
 }
 .logo-3002{
-    max-width: 90%;
-    max-height: 80%;
+    max-width: 85%;
+    width: 300px;
 }
+@media (max-width:550px) {
+    .header-presentation-logo h1,.header-presentation-logo h2{
+        font-size: large;
+    }
+}
+/* Navegação */
 .navigation{
     margin: 30px ;
 }
@@ -83,6 +88,12 @@
     }
     100%{
         transform: translate(0%,-50%);
+    }
+}
+@media (max-width:350px) {
+    #donate-btn-scroll-page::after,
+    #donate-btn-scroll-page::before{
+        display: none;
     }
 }
 /* seção de apresentção*/
