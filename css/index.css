@@ -3,8 +3,6 @@
 /* Header e texto principal */
 .header-presentation-logo{
     background-color: var(--background-dark);
-    color: #fff;
-    text-align: center;
     padding: 25px 0;
 }
 .logo-3002{
@@ -27,8 +25,6 @@
     display: grid;
     grid-template-rows: 50px 50px;
     grid-template-columns: 50% 50%;
-    align-items: center;
-    justify-items: center;
     margin: 0 auto;
     row-gap: 10px;
 }
@@ -37,14 +33,10 @@
     grid-column-end: 3;
 }
 #donate-btn-scroll-page{
-    border: none;
-    text-transform: uppercase;
     font-weight: bolder;
     background-color: var(--color-logo);
-    color: #fff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.616);
     font-size: larger;
-    position: relative;
 }   
 #donate-btn-scroll-page::before{
     content: '>';
@@ -105,10 +97,6 @@
     font-family: 'Sedgwick Ave Display',Roboto,arial;
     font-weight: bolder;
     margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row-reverse;
 }
 .hello>p{
     font-size: xx-large;
@@ -127,44 +115,31 @@
 }
 .presentation-text1,.presentation-text2{
     margin: 30px auto;
-    color: #fff;
     min-height: 350px;
-    /* padding: 0 10px; */
     display: grid;
     place-content: center;
     width: 619px;
     overflow: hidden;
     max-width: 90%;
-    position: relative;
     border:double 5px var(--color-logo);
 }
 .presentation-text1 p,.presentation-text2 p{
     font-size: large;
-    position: absolute;
     top: 50%;
     left: 5%;
     transform: translatey(-50%);
-    max-width: 95%;
+    max-width: 90%;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.918);
     margin: 0;
-}
-.presentation-text2{
-    position: relative;
 }
 .presentation-text2 p{
     z-index: 2;
 }
 /* Carrossel de imagens com fotos dos alunos */
-.meet-our-class{
-
-    text-align: center;
-}
 .meet-our-class h2{
-    text-align: center;
     font-family: 'Sedgwick Ave Display',Roboto,arial;
     font-weight: bolder;
     margin-top: 100px;
-    flex-direction: row-reverse;
 }
 .meet-our-class img{
     max-width: 95%;
@@ -173,7 +148,6 @@
 }
 /* Seção de pagamento */
 .pay{
-    text-align: left;
     margin: 70px auto;
     width: 600px;
     max-width: 97%;
@@ -194,12 +168,11 @@
     color: #525252;
 }
 .copy-pix-key{
-    display: flex;
-    align-items: center;
     background-color: #fff;
     border-radius: 10px;
     border: solid 1px black;
     height: 50px;
+    overflow: hidden;
 }
 .copy-pix-key p{
     padding: 0 20px;
@@ -207,10 +180,8 @@
 .copy-pix-key button{
     padding: 0 20px;
     height: 100%;
-    border-radius: 0 10px 10px 0;
     color: #fff;
     background-color: var(--color-logo);
-    border: none;
     cursor: pointer;
 }
 @media (max-width:450px) {
@@ -262,7 +233,6 @@ footer{
     }
 }
 /* Tela de carregamento */
-    /* HTML: <div class="loader"></div> */
 .load-screen{
     width: 100vw;
     height: 100vh;

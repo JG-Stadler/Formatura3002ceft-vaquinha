@@ -12,7 +12,8 @@
     <!-- Tela de carregamento -->
     <div class="load-screen" id="loading"><span class="loader"></span></div>
     <!-- Header de introdução|Texto principal -->
-    <header class="header-presentation-logo shadow-lg rounded">
+    <header class="header-presentation-logo shadow-lg 
+    rounded text-white text-center">
         <h1>Faça parte disso!</h1>
         <img src="images/logo-3002.png"
         class="logo-3002" alt="Logo-Terceirão 3002">
@@ -20,48 +21,50 @@
     </header>
     <!-- Barra de navegação -->
     <nav class="navigation">
-        <ul class="nav-list">
+        <ul class="nav-list justify-items-center align-items-center">
             <li class="nav-item"><a href="https://www.instagram.com/3002ceft/" class="nav-link"><img src="images/icons8-instagram.svg" alt="Instagram"></a></li>
             <li class="nav-item"><a href="https://www.tiktok.com/@3002freitomas?lang=pt-BR" target="_blank" class="nav-link"><img src="images/icons8-tik-tok.svg" alt="TikTok"></a></li>
-            <li class="nav-item nav-button"><button onclick="ScrollPage()" id="donate-btn-scroll-page" target="_blank" class="shadow btn">Faça sua doação</button></li>
+            <li class="nav-item nav-button"><button onclick="ScrollPage()" id="donate-btn-scroll-page" target="_blank"
+             class="shadow btn text-uppercase position-relative text-white">Faça sua doação</button></li>
         </ul>
     </nav>
     <!-- Texto de apresentação -->
     <main>
-    <h3 class="hello">Olá,somos da turma 3002ceft <p>&#x1F44B</p></h3>
-    <div class="presentation-text1 rounded">
-         <p>
+    <h3 class="hello d-flex justify-content-center flex-row-reverse align-items-center">
+        Olá,somos da turma 3002ceft <p>&#x1F44B</p></h3>
+    <div class="presentation-text1 text-white position-relative rounded">
+         <p class="position-absolute">
              Este ano encerraremos uma grande jornada em nossas vidas! <br>
              Depois de longos anos na escola, esse ano finalmente terminaremos o ensino médio
              e contamos com a sua contribuição para realizarmos nossa tão sonhada formatura.
          </p>
          <img src="images/terceirãoAzulão.jpg" alt="terceirão azulão">
     </div>
-    <div class="presentation-text2 rounded">
-         <p>
+    <div class="presentation-text2 text-white position-relative rounded">
+         <p class="position-absolute">
              Doe o valor que desejar,
              qualquer quantia já é o suficiente para ajudar a arcar com os
              custos de nossa formatura.
          </p>
          <img src="images/terceirão-all-black.jpg" alt="terceirão azulão">
-        </div>
+    </div>
 
-    <div class="meet-our-class" defer>
+    <div class="meet-our-class text-center" defer>
         <h2>Conheça nossa turminha</h2>
         <img src="" id="foto-aluno" class="rounded shadow" alt="Foto aluno">
     </div>
     </main>
     <!-- seção de pagamento -->
-    <section class="pay" id="pay">
+    <section class="pay text-left" id="pay">
     <h1>Contribua já!!!</h1>
     <img src="images/icone-pix.webp" alt="Icone-pix">
     <div class="pix-info">
         <h4 class="title">Nome da conta</h4>
         <p>Sarah Dos Santos Souza Goulart</p>
         <h4 class="title">Chave pix</h4>
-        <span class="copy-pix-key"><p id="pix-key">
+        <span class="copy-pix-key d-flex align-items-center"><p id="pix-key">
             2fa53d4a-1d2f-4a7b-8212-920d392b8293
-        </p><button id="copy" onclick="CopyKey()">Copiar</button></span>
+        </p><button id="copy" class="border-0" onclick="CopyKey()">Copiar</button></span>
     </div>
     </section>
 
