@@ -64,9 +64,14 @@
         <h4 class="title">Nome da conta</h4>
         <p>Sarah Dos Santos Souza Goulart</p>
         <h4 class="title">Chave pix</h4>
-        <span class="copy-pix-key d-flex align-items-center"><p id="pix-key">
-            2fa53d4a-1d2f-4a7b-8212-920d392b8293
-        </p><button id="copy" class="border-0" onclick="CopyKey()">Copiar</button></span>
+        <div class="copy-pix-key d-flex align-items-center"><p id="pix-key">
+            Chave PIX indisponivel
+        </p><button id="copy" class="border-0" onclick="Alertar()">Copiar</button></div>
+        <script>
+            function Alertar(){
+                window.alert("O periodo de Doações foi encerrado");
+            }
+        </script>
     </div>
     </section>
 
