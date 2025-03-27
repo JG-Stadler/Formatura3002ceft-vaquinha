@@ -17,12 +17,12 @@ const ChangeImage = setInterval(()=>{
        },1500);
 
 // Copiar codigo pix
-function CopyKey(){
-    let pixKey = document.getElementById("pix-key").innerText;
-    navigator.clipboard.writeText(pixKey).then(()=>{
-        alert("Chave pix Copiada para a área de transferência");
-    });
-}
+// function CopyKey(){
+//     let pixKey = document.getElementById("pix-key").innerText;
+//     navigator.clipboard.writeText(pixKey).then(()=>{
+//         alert("Chave pix Copiada para a área de transferência");
+//     });
+// }
 // Botão de scroll
 const paySection = document.getElementById("pay");
 function ScrollPage(){
